@@ -6,6 +6,12 @@ ROS 2 package for vision-language model (VLM) based navigation with two modes:
 
 Uses on-device VLMs (like LLaVA) running on your NVIDIA RTX 4060.
 
+## Video Demonstration
+
+Watch the JetBot VLM Navigator in action:
+
+[![JetBot VLM Navigator Demo](https://img.youtube.com/vi/7v2qHTBN4a0/0.jpg)](https://www.youtube.com/watch?v=7v2qHTBN4a0)
+
 ## Features
 
 - **On-Device VLM**: Runs locally on NVIDIA RTX 4060 (no API costs!)
@@ -489,8 +495,3 @@ Kalhan Boralessa (kalhan.munasingarachchige2023@my.ntu.ac.uk)
 - Optimized for NVIDIA RTX GPUs
 - JetBot discrete command interface with auto-stop safety
 
-## Video Demonstration
-
-Watch the JetBot VLM Navigator in action:
-
-[![JetBot VLM Navigator Demo](https://img.youtube.com/vi/7v2qHTBN4a0/0.jpg)](https://www.youtube.com/watch?v=7v2qHTBN4a0)
