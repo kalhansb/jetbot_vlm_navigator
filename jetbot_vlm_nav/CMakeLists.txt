@@ -23,6 +23,7 @@ find_package(tf2_geometry_msgs REQUIRED)
 install(PROGRAMS
   src/vlm_navigator_node.py
   src/vlm_detector_node.py
+  src/vlm_target_object.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
