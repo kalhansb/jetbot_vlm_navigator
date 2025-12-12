@@ -1,0 +1,16 @@
+# Python dependencies for JetBot VLM Navigator
+
+# Core ML libraries
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.36.0
+accelerate>=0.20.0
+bitsandbytes>=0.41.0
+
+# Image processing
+Pillow>=9.0.0
+opencv-python>=4.5.0
+
+# Additional dependencies
+sentencepiece>=0.1.99
+protobuf>=3.20.0

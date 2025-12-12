@@ -1,0 +1,39 @@
+# VLM Navigator Configuration
+
+vlm_navigator:
+  ros__parameters:
+    # Topics
+    camera_topic: /camera/color/image_raw
+    cmd_vel_topic: /cmd_vel
+    
+    # VLM Model Configuration
+    # Options:
+    # - llava-hf/llava-v1.6-mistral-7b-hf (Recommended for RTX 4060)
+    # - llava-hf/llava-1.5-7b-hf (Alternative, slightly less capable)
+    # - Qwen/Qwen2-VL-7B-Instruct (Good alternative)
+    model_name: "llava-hf/llava-v1.6-mistral-7b-hf"
+    
+    # Use 4-bit quantization (highly recommended for 8GB VRAM)
+    use_4bit: true
+    
+    # Device: 'cuda' for GPU, 'cpu' for CPU
+    device: "cuda"
+    
+    # Target object to find
+    target_object: "bottle"
+    
+    # Query interval (seconds) - how often to process images with VLM
+    # Lower = more responsive but more GPU usage
+    query_interval: 1.0
+    
+    # Navigation parameters
+    linear_speed: 0.2        # m/s - forward speed
+    angular_speed: 0.5       # rad/s - rotation speed
+    stop_distance_threshold: 0.35  # When object size > this, stop (0.0-1.0)
+    center_tolerance: 0.15   # How centered object needs to be for FORWARD (0.0-0.5)
+    safety_timeout: 5.0      # Stop if no detection for this many seconds
+    
+    # Image processing
+    image_width: 336         # LLaVA optimal input size
+    image_height: 336
+    max_new_tokens: 200      # Maximum tokens for VLM response
