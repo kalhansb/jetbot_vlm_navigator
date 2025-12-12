@@ -480,7 +480,7 @@ Apache-2.0
 
 ## Author
 
-Kalhan Sandaru (kalhansandaru@gmail.com)
+Kalhan Boralessa (kalhan.munasingarachchige2023@my.ntu.ac.uk)
 
 ## Acknowledgments
 
